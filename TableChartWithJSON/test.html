@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+
+ <title>D3JS Bar chart</title>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+
+	<style>
+		div.bar{
+		display:inline-block;
+		width:60px;
+		height:110px;
+		margin-right:2px;
+		background-color:darkmagenta;
+		}
+	</style>
+ 
+	<script type="text/javascript" src="data.json"></script>
+      	<script type="text/javascript" src="myscript.js"></script>
+ 	
+        <script type="text/javascript" src="mydata.js"></script>
+
+                
+</head>
+ 
+ <body>
+ 
+ 		<button onclick="retrieveData()">
+        Click for Pie Chart
+        </button><br>
+        
+        <button onclick="load()">
+        showing data from JSON file
+        </button>
+    <br><br>
+    <div id="showData"></div> 
+</body> 
+</html>
