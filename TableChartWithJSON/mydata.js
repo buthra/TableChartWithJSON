@@ -4,15 +4,17 @@ function retrieveData() {
 	var mydataset=JSON.parse(data);
 	
 var dataset=[];
-var currdata = [];	
+	
 	
 	for(var i=0; i< mydataset.length;i++){ 
-		 currdata=[(mydataset[i].age)];	
+		 var currdata=[(mydataset[i].age)];	
 		//alert(currdata);
 	    dataset.push(currdata);	
 	};
-	alert(dataset);
-	d3.select("body").selectAll("div")
+	//alert(dataset);
+	
+	
+	d3.select(".project").selectAll("div")
 	.data(dataset)
 	.enter()
 	.append("div")

@@ -1,7 +1,7 @@
 
 
 function load() {
-	var mydata = JSON.parse(data);
+	var mydata = JSON.parse(data1);
 	
 	
 	
@@ -15,13 +15,14 @@ function load() {
      }
      
      var table = document.createElement("table");
-
+     	table.style.border = "1px solid #000";
      // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
 
      var tr = table.insertRow(-1);                   // TABLE ROW.
 
      for (var i = 0; i < col.length; i++) {
          var th = document.createElement("th");      // TABLE HEADER.
+         th.style.border = "1px solid #000";
          th.innerHTML = col[i];
          tr.appendChild(th);
      }
@@ -33,6 +34,8 @@ function load() {
 
          for (var j = 0; j < col.length; j++) {
              var tabCell = tr.insertCell(-1);
+             tabCell.style.cssFloat = "center";
+             tabCell.style.border = "1px solid #000";
              tabCell.innerHTML = mydata[i][col[j]];
          }
      }

@@ -2,37 +2,72 @@
 <html>
 <head>
 
- <title>D3JS Bar chart</title>
+ <title>DEMO APP</title>
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 
 	<style>
 		div.bar{
 		display:inline-block;
-		width:60px;
-		height:110px;
+		width:50px;
+		height:100px;
 		margin-right:2px;
 		background-color:darkmagenta;
 		}
+		
+		
 	</style>
  
-	<script type="text/javascript" src="data.json"></script>
+		<script type="text/javascript" src="data.json"></script>
+		<script type="text/javascript" src="data1.json"></script>
       	<script type="text/javascript" src="myscript.js"></script>
- 	
-        <script type="text/javascript" src="mydata.js"></script>
+ 	    <script type="text/javascript" src="mydata.js"></script>
 
                 
 </head>
  
- <body>
- 
- 		<button onclick="retrieveData()">
+ <body>  <br><br>
+<table style="width:75%">
+  <tr>
+    <th> To create Bar Chart, click on the "Click for Bar Chart" button
+     </th>
+    <th></th> 
+    <th> To display JSON File in table, click on the "Show JSON file data"
+    </th>
+  </tr>
+  <tr>
+     <td colspan=3 height=10></td>  
+  </tr>
+  
+  <tr>
+    <td align="center"><button onclick="retrieveData()">
+        Click for Bar Chart
+        </button>
+     </td>
+    <td></td> 
+    <td align="center"><button onclick="load()">
+        Show JSON file data
+        </button>
+     </td>
+  </tr>
+  <tr>
+    <td align="center">
+     <div class="project"></div>
+    </td>
+    <td></td>
+     
+    <td align="center"> <div id="showData"></div></td>
+  </tr>
+</table>
+ <!-- 		<button onclick="retrieveData()">
         Click for Pie Chart
         </button><br>
         
         <button onclick="load()">
         showing data from JSON file
-        </button>
-    <br><br>
-    <div id="showData"></div> 
+        </button> 
+  
+     <div class="project"></div>
+     <div id="showData"></div>-->
+     
 </body> 
 </html>
